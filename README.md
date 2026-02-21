@@ -6,7 +6,7 @@
 
 ## Basic Details
 
-### Team Name: [MATRIX]
+### Team Name: MATRIX
 
 ### Team Members
 - Member 1: Manasa Dinkar - SNMIMT,MALIANKARA
