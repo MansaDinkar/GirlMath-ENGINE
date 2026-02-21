@@ -76,7 +76,8 @@ cd GirlMath-ENGINE]
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](<img src="SS1.png" width="600">)
+![Screenshot1](<img src="./SS1.png" width="300">
+)
 *Add caption explaining what this shows*
 
 ![Screenshot2](Add screenshot 2 here with proper name)
