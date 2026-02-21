@@ -92,8 +92,8 @@ cd GirlMath-ENGINE]
 
 **System Architecture:**
 
-![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
+<img src="architecture.svg" width="700">
+*User input flows through a JavaScript scoring engine, gets sent to Groq's Llama 3.3 70B API with full context, and returns a structured JSON result rendered as an animated risk score, breakdown cards, and recommendation.*
 
 **Application Workflow:**
 
