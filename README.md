@@ -92,11 +92,11 @@ cd GirlMath-ENGINE]
 
 **System Architecture:**
 
-<img src="architecture.svg" width="700">
+<img src="architecture.svg" width="500">
 *User input flows through a JavaScript scoring engine, gets sent to Groq's Llama 3.3 70B API with full context, and returns a structured JSON result rendered as an animated risk score, breakdown cards, and recommendation.*
 
 **Application Workflow:**
-<img src="workflow.svg" width="600">
+<img src="workflow.svg" width="500">
 *User selects decision type → describes it → rates emotional state → scoring algorithm calculates risk → Groq AI generates analysis → results displayed with score, breakdown and recommendation*
 
 ---
