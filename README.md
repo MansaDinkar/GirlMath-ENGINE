@@ -72,7 +72,7 @@ cd GirlMath-ENGINE]
 
 ### For Software:
 
-#### Screenshots (Add at least 3)
+#### Screenshots
 
 <img src="SS1.png" width="300">
 *Step 1 — Choose between Personal or Financial decision type*
