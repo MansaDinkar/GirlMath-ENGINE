@@ -136,7 +136,4 @@ cd GirlMath-ENGINE]
 
 This project is licensed under the [LICENSE_NAME] License - see the [LICENSE](LICENSE) file for details.
 
-**Common License Options:**
-- MIT License (Permissive, widely used)
-
 Made with ❤️ at TinkerHub
