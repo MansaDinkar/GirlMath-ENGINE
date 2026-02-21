@@ -75,27 +75,29 @@ cd GirlMath-ENGINE]
 #### Screenshots
 
 <img src="SS1.png" width="300">
-*Step 1 — Choose between Personal or Financial decision type*
+Step 1 — Choose between Personal or Financial decision type
 
 <img src="SS2.png" width="300">
-*Step 2 — Describe your decision in your own words before the analysis begins*
+Step 2 — Describe your decision in your own words before the analysis begins
 
 <img src="SS3.png" width="300">
-*Step 3 — Rate your mood, urgency and confidence to calibrate the risk analysis*
+Step 3 — Rate your mood, urgency and confidence to calibrate the risk analysis
 
 <img src="SS4.png" width="300">
-*Step 4 — AI-powered Impulse Risk Score with detailed breakdown and actionable recommendation*
+Step 4 — AI-powered Impulse Risk Score with detailed breakdown and actionable recommendation
 
 #### Diagrams
 
 **System Architecture:**
 
 <img src="architecture.svg" width="500">
-*User input flows through a JavaScript scoring engine, gets sent to Groq's Llama 3.3 70B API with full context, and returns a structured JSON result rendered as an animated risk score, breakdown cards, and recommendation.*
+User input flows through a JavaScript scoring engine, gets sent to Groq's Llama 3.3 70B API with full context, and returns a structured JSON result rendered as an animated risk score, breakdown cards, and recommendation.
 
 **Application Workflow:**
+<br><br>
 <img src="workflow.svg" width="500">
-*User selects decision type → describes it → rates emotional state → scoring algorithm calculates risk → Groq AI generates analysis → results displayed with score, breakdown and recommendation*
+<br><br>
+User selects decision type → describes it → rates emotional state → scoring algorithm calculates risk → Groq AI generates analysis → results displayed with score, breakdown and recommendation
 
 ---
 ## AI Tools Used
@@ -123,8 +125,6 @@ cd GirlMath-ENGINE]
 - Decision to use Groq/Llama as the AI backend for fast, free inference
 - UI/UX direction — color palette, tone, fonts, and overall aesthetic vision
 - Prompt engineering for the AI analysis persona ("sharp, honest, warm analyst")
-
-*Note: Proper documentation of AI usage demonstrates transparency and earns bonus points in evaluation!*
 
 ---
 
