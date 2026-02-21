@@ -76,8 +76,7 @@ cd GirlMath-ENGINE]
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](<img width="843" height="848" alt="image" src="https://github.com/user-attachments/assets/66ff6b25-fc30-4398-9c4b-3775459a5780" />
-)
+![Screenshot1]()
 *Add caption explaining what this shows*
 
 ![Screenshot2](Add screenshot 2 here with proper name)
