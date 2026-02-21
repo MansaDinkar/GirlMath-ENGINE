@@ -132,5 +132,16 @@ cd GirlMath-ENGINE]
 - Gaythri R Menon: UI/UX design — visual aesthetic, color palette, layout, and overall look and feel.
 - Manasa Dinkar: Frontend development, API integration, scoring algorithm, testing, and documentation.
 ---
+## License
+
+This project is licensed under the [LICENSE_NAME] License - see the [LICENSE](LICENSE) file for details.
+
+**Common License Options:**
+- MIT License (Permissive, widely used)
+- Apache 2.0 (Permissive with patent grant)
+- GPL v3 (Copyleft, requires derivative works to be open source)
+
+---
+
 
 Made with ❤️ at TinkerHub
