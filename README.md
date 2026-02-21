@@ -98,7 +98,7 @@ cd GirlMath-ENGINE]
 *User selects decision type → describes it → rates emotional state → scoring algorithm calculates risk → Groq AI generates analysis → results displayed with score, breakdown and recommendation*
 
 ---
-## AI Tools Used (Optional - For Transparency Bonus)
+## AI Tools Used
 
 **Tool Used:** Claude (Anthropic)
 
