@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GirlMath Decision Engine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+
+      <header class="header">
+        <div class="header-ornament">✦ ✦ ✦</div>
+        <h1><em>GirlMath</em> Decision Engine</h1>
+        <p>Analyze decisions before acting.</p>
+      </header>
+
+      <div class="steps" id="stepIndicator">
+        <div class="step-dot active" id="dot1">1</div>
+        <div class="step-line" id="line1"></div>
+        <div class="step-dot" id="dot2">2</div>
+        <div class="step-line" id="line2"></div>
+        <div class="step-dot" id="dot3">3</div>
+      </div>
+
+      <!-- STEP 1: Pick type -->
+      <div class="panel" id="step1">
+        <div class="panel-title">What kind of decision is this?</div>
+        <div class="panel-subtitle">Start here — the analysis adapts based on your choice.</div>
+        <div class="type-grid">
+          <div class="type-card" id="cardPersonal" data-type="personal">
+            <div class="type-icon">🌸</div>
+            <div class="type-label">Personal</div>
+            <div class="type-desc">Relationships, habits, life choices, emotions</div>
+          </div>
+          <div class="type-card" id="cardFinancial" data-type="financial">
+            <div class="type-icon">💸</div>
+            <div class="type-label">Financial</div>
+            <div class="type-desc">Purchases, investments, spending, money moves</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 2: Description -->
+      <div class="panel hidden" id="step2">
+        <div class="panel-title">Tell me about your decision.</div>
+        <div class="panel-subtitle">Describe it in your own words — the more context, the sharper the analysis.</div>
+        <div class="fields">
+          <div class="field">
+            <textarea class="textarea" id="descriptionInput" rows="5" placeholder="Describe your decision here..."></textarea>
+          </div>
+        </div>
+        <div class="nav">
+          <button class="btn-back" id="back2">← Back</button>
+          <button class="btn-primary" id="next2">Next →</button>
+        </div>
+      </div>
+
+      <!-- STEP 3: Sliders + cost inputs -->
+      <div class="panel hidden" id="step3">
+        <div class="panel-title">How are you feeling right now?</div>
+        <div class="panel-subtitle">Be honest — this is for you.</div>
+        <div class="fields">
+
+          <div class="field">
+            <span class="label">Mood <span class="slider-val" id="moodVal">5</span></span>
+            <div class="slider-wrap">
+              <input type="range" class="slider" id="moodSlider" min="1" max="10" value="5" />
+            </div>
+            <div class="slider-hints"><span>1 — Very Low</span><span>10 — Very High</span></div>
+          </div>
+
+          <div class="field">
+            <span class="label">Urgency <span class="slider-val" id="urgencyVal">5</span></span>
+            <div class="slider-wrap">
+              <input type="range" class="slider" id="urgencySlider" min="1" max="10" value="5" />
+            </div>
+            <div class="slider-hints"><span>1 — No Rush</span><span>10 — Extremely Urgent</span></div>
+          </div>
+
+          <div class="field">
+            <span class="label">Confidence <span class="slider-val" id="confidenceVal">5</span></span>
+            <div class="slider-wrap">
+              <input type="range" class="slider" id="confidenceSlider" min="1" max="10" value="5" />
+            </div>
+            <div class="slider-hints"><span>1 — Uncertain</span><span>10 — Very Sure</span></div>
+          </div>
+
+          <div class="check-row" id="checkRow">
+            <div class="check-box" id="checkBox"></div>
+            <div class="check-label">
+              <span class="label">Future Dependency</span>
+              <span class="check-hint">Will future plans depend on this decision?</span>
+            </div>
+          </div>
+
+          <div class="finance-section hidden" id="financeSection">
+            <div class="finance-label">Financial Details</div>
+            <div class="field">
+              <span class="label">Cost ($)</span>
+              <input type="number" class="input" id="costInput" min="0" placeholder="0.00" />
+            </div>
+            <div class="field">
+              <span class="label">Monthly Capacity ($)</span>
+              <input type="number" class="input" id="capacityInput" min="0" placeholder="How much can you spend this month?" />
+            </div>
+            <div class="field">
+              <span class="label">Months Until Benefit</span>
+              <input type="number" class="input" id="monthsInput" min="0" placeholder="0" />
+            </div>
+          </div>
+
+        </div>
+        <div class="error-box hidden" id="errorBox">Something went wrong. Please try again.</div>
+        <div class="nav">
+          <button class="btn-back" id="back3">← Back</button>
+          <button class="btn-primary" id="analyzeBtn">Analyze ✦</button>
+        </div>
+      </div>
+
+      <!-- STEP 4: Results -->
+      <div class="results hidden" id="step4">
+        <div class="risk-banner" id="riskBanner">
+          <div class="risk-pill" id="riskLevel">—</div>
+          <div class="risk-score" id="riskScore">—</div>
+          <div class="risk-score-label">Impulse Risk Score / 100</div>
+        </div>
+        <div class="ai-panel">
+          <div class="ai-header"><div class="ai-dot"></div>AI Analysis</div>
+          <div class="ai-verdict" id="aiVerdict">—</div>
+          <div class="breakdown-grid">
+            <div class="bd-item"><div class="bd-label">Emotional Bias</div><div class="bd-text" id="bdEmotional">—</div></div>
+            <div class="bd-item"><div class="bd-label">Future Dependency</div><div class="bd-text" id="bdFuture">—</div></div>
+            <div class="bd-item"><div class="bd-label">Resource Strain</div><div class="bd-text" id="bdResource">—</div></div>
+            <div class="bd-item"><div class="bd-label">Delay Risk</div><div class="bd-text" id="bdDelay">—</div></div>
+          </div>
+          <div class="recommendation">
+            <div class="rec-label">✦ What to do</div>
+            <div class="rec-text" id="recText">—</div>
+          </div>
+        </div>
+        <button class="restart-btn" id="restartBtn">Start Over ↺</button>
+      </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
