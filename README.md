@@ -2,27 +2,29 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# [GirlMath Decision Engine] 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: [MATRIX]
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: [Manasa Dinkar] - [SNMIMT,MALIANKARA]
+- Member 2: [Gayathri R Menon] - [SNMIMT,MALIANKARA]
 
 ### Hosted Project Link
-[mention your project hosted link here]
+[https://girl-math-engine-git-main-manasa-dinkars-projects.vercel.app/]
 
 ### Project Description
-[2-3 lines about what your project does]
+[A pastel-aesthetic web app that helps you think before you act. Describe your decision, rate your mood, urgency & confidence — and get an AI-powered Impulse Risk Score with an honest breakdown and clear recommendation. Works for both personal and financial decisions. 🌸
+]
 
 ### The Problem statement
-[What problem are you solving?]
+[People often make impulsive decisions driven by emotion — texting an ex, impulse buying, skipping important commitments — without pausing to evaluate the real risks involved.
+]
 
 ### The Solution
-[How are you solving it?]
+[GirlMath Decision Engine acts as your personal decision analyst. It takes your decision description, emotional state, and contextual inputs, calculates an Impulse Risk Score, and uses AI to give you a warm but honest breakdown with a clear recommendation on what to do.]
 
 ---
 
@@ -31,26 +33,20 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
-
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
-
+- Languages used: [HTML, CSS, JavaScript]
+- Frameworks used: [None (Vanilla JS)]
+- Libraries used: [Groq API (Llama 3.3 70B)]
+- Tools used: [VS Code, Git, GitHub]
 ---
 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
-
+- 🌸 Decision Type Selection: [Choose between Personal or Financial decision flows]
+- 📝 Context-First Input: [Describe your decision in your own words before rating emotions]
+- 🎚️ Emotional State Meters: [Rate your Mood, Urgency, and Confidence via sliders]
+- 💸 Financial Analysis Mode: [ Input cost, monthly capacity, and months until benefit for financial decisions]
+- 🤖 AI-Powered Analysis: [Groq's Llama 3.3 70B generates a personalized verdict and breakdown]
 ---
 
 ## Implementation
@@ -59,22 +55,19 @@ List the key features of your project:
 
 #### Installation
 ```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
+[# Clone the repository
+git clone https://github.com/MansaDinkar/GirlMath-ENGINE.git
+
+# Navigate into the folder
+cd GirlMath-ENGINE]
 ```
 
 #### Run
 ```bash
-[Run commands - e.g., npm start, python app.py]
+[const CONFIG = {
+  GROQ_KEY: "your_groq_api_key_here"
+};]
 ```
-
-### For Hardware:
-
-#### Components Required
-[List all components needed with specifications]
-
-#### Circuit Setup
-[Explain how to set up the circuit]
-
 ---
 
 ## Project Documentation
@@ -83,7 +76,8 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
+![Screenshot1](<img width="843" height="848" alt="image" src="https://github.com/user-attachments/assets/66ff6b25-fc30-4398-9c4b-3775459a5780" />
+)
 *Add caption explaining what this shows*
 
 ![Screenshot2](Add screenshot 2 here with proper name)
