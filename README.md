@@ -79,11 +79,14 @@ cd GirlMath-ENGINE]
 <img src="SS1.png" width="300">
 *Step 1 — Choose between Personal or Financial decision type*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<img src="SS2.png" width="300">
+*Step 2 — Describe your decision in your own words before the analysis begins*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img src="SS3.png" width="300">
+*Step 3 — Rate your mood, urgency and confidence to calibrate the risk analysis*
+
+<img src="SS4.png" width="300">
+*Step 4 — AI-powered Impulse Risk Score with detailed breakdown and actionable recommendation*
 
 #### Diagrams
 
