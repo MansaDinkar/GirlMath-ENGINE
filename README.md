@@ -18,6 +18,11 @@ https://girl-math-engine-git-main-manasa-dinkars-projects.vercel.app/
 ### Project Description
 A pastel-aesthetic web app that helps you think before you act. Describe your decision, rate your mood, urgency & confidence — and get an AI-powered Impulse Risk Score with an honest breakdown and clear recommendation. Works for both personal and financial decisions. 🌸
 
+⚠️ This project was originally built for self-hosting use.
+It requires a Groq API key to function.
+For security reasons, no API key is included in this repository.
+Please generate your own key at https://console.groq.com and insert it in script.js.
+
 
 ### The Problem statement
 People often make impulsive decisions driven by emotion — texting an ex, impulse buying, skipping important commitments — without pausing to evaluate the real risks involved.
