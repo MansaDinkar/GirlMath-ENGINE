@@ -134,8 +134,10 @@ User selects decision type → describes it → rates emotional state → scorin
 ---
 
 ## Team Contributions
-- Gaythri R Menon: UI/UX design — visual aesthetic, color palette, layout, and overall look and feel.
+
 - Manasa Dinkar: Frontend development, API integration, scoring algorithm, testing, and documentation.
+
+- Gayathri R Menon: UI/UX design — visual aesthetic, color palette, layout, and overall look and feel.
 ---
 ## License
 
