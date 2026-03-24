@@ -131,10 +131,10 @@
         <div class="ai-panel">
           <div class="ai-header"><div class="ai-dot"></div>AI Analysis</div>
           <div class="ai-verdict" id="aiVerdict">—</div>
-          <div class="breakdown-grid">
+          <div class="breakdown-grid" id="breakdownGrid">
             <div class="bd-item"><div class="bd-label">Emotional Bias</div><div class="bd-text" id="bdEmotional">—</div></div>
             <div class="bd-item"><div class="bd-label">Future Dependency</div><div class="bd-text" id="bdFuture">—</div></div>
-            <div class="bd-item"><div class="bd-label">Resource Strain</div><div class="bd-text" id="bdResource">—</div></div>
+            <div class="bd-item" id="bdResourceCard"><div class="bd-label">Resource Strain</div><div class="bd-text" id="bdResource">—</div></div>
             <div class="bd-item"><div class="bd-label">Delay Risk</div><div class="bd-text" id="bdDelay">—</div></div>
           </div>
           <div class="recommendation">
@@ -142,6 +142,13 @@
             <div class="rec-text" id="recText">—</div>
           </div>
         </div>
+        <button class="whatdo-btn" id="whatdoBtn">What should I do? ✦</button>
+
+        <div class="followup-panel hidden" id="followupPanel">
+          <div class="followup-header"><div class="followup-dot"></div>Action Plan + Deep Dive</div>
+          <div id="followupBody"></div>
+        </div>
+
         <button class="restart-btn" id="restartBtn">Start Over ↺</button>
       </div>
 
