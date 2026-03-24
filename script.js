@@ -3,7 +3,7 @@
 //  Flow: Step1 (type) → Step2 (description) → Step3 (sliders) → Step4 (results)
 // ============================================================
 
-const GROQ_KEY = "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";
+const GROQ_KEY = "YOUR_GROQ_KEY";
 const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
 
 const state = {
