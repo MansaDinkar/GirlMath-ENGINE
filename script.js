@@ -3,8 +3,7 @@
 //  Flow: Step1 (type) → Step2 (description) → Step3 (sliders) → Step4 (results)
 // ============================================================
 
-const GROQ_KEY = "YOUR_GROQ_KEY";
-const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
+const GROQ_URL = "/api/groq";
 
 const state = {
   step: 1, type: "", mood: 5, urgency: 5, confidence: 5,
@@ -181,7 +180,7 @@ async function analyze() {
   try {
     const res = await fetch(GROQ_URL, {
       method: "POST",
-      headers: { "Content-Type": "application/json", "Authorization": "Bearer " + GROQ_KEY },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         model: "llama-3.3-70b-versatile",
         messages: [{ role: "user", content: prompt }],
@@ -285,7 +284,7 @@ $("whatdoBtn").addEventListener("click", async () => {
   try {
     const res = await fetch(GROQ_URL, {
       method: "POST",
-      headers: { "Content-Type": "application/json", "Authorization": "Bearer " + GROQ_KEY },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         model: "llama-3.3-70b-versatile",
         messages: [{ role: "user", content: buildFollowupPrompt() }],
@@ -343,7 +342,7 @@ async function sendReply() {
   try {
     const res = await fetch(GROQ_URL, {
       method: "POST",
-      headers: { "Content-Type": "application/json", "Authorization": "Bearer " + GROQ_KEY },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         model: "llama-3.3-70b-versatile",
         messages: [{ role: "user", content: buildReplyPrompt(reply) }],
